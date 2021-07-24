@@ -1,12 +1,13 @@
-
-
+import React from 'react';
+import './App.css';
+import './Components/MainPage';
+import Box from '@material-ui/core/Box';
+import MainPage from './Components/MainPage';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       <p>Inka start chedhama?....</p>
-      </header>
-    </div>
+    <React.Fragment>
+      <MainPage />
+    </React.Fragment>
   );
 }
 
