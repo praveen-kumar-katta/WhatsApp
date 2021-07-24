@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box';
 import HeadBox from './HeadBox';
 import ChatHead from './ChatHead';
 import Divider from '@material-ui/core/Divider';
+import ChatBoxHeader from './ChatBoxHeader';
+
 const useStyles = (theme) => ({
     box: {
         height: "100%",
@@ -25,17 +27,29 @@ const useStyles = (theme) => ({
 })
 
 export class MainPage extends Component {
+
+    // state={
+    //     contacts: ['Roopa', 'Yaswanth', 'Bonthu'],
+    //     messages: [],
+    // }
+
+    // componentDidMount = ()=>{
+        
+    // }
+
     render() {
         const { classes } = this.props;
         return (
             <div>
                 <Box className={classes.box}>
                     <Paper className={classes.paper} >
-                       <HeadBox />
+                       {/* <HeadBox />
                       
                        <ChatHead />
                        <Divider className={classes.divider} />
-                       <ChatHead />
+                       <ChatHead /> */}
+
+                       <ChatBoxHeader />
                       
                     </Paper>
                 </Box>

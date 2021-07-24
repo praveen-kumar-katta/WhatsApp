@@ -6,11 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import Avatar from '@material-ui/core/Avatar';
-// import GridList from "@material-ui/core/GridList";
-// import GridListTile from "@material-ui/core/GridListTile";
-import ButtonBase from '@material-ui/core/ButtonBase';
 import Badge from '@material-ui/core/Badge';
 
 const useStyles = (theme) => ({
@@ -23,7 +19,7 @@ const useStyles = (theme) => ({
         top: 13,
         border: `2px solid `,
         padding: '0 4px',
-      },
+    },
 })
 
 export class ChatHead extends Component {
@@ -33,7 +29,7 @@ export class ChatHead extends Component {
 
             <Box bgcolor='#000000' color='#FFF'>
 
-                <Grid container spacing={3}>
+                <Grid container spacing={3} alignItems="center">
 
                     <Grid item xs={2}>
                         <IconButton aria-label="upload picture" component="span">
@@ -48,7 +44,7 @@ export class ChatHead extends Component {
 
 
                                 <span>
-                                    <Typography style={{ textAlign: 'left', alignItems:'center', }} variant="h6" >Roopa</Typography>
+                                    <Typography style={{ textAlign: 'left', alignItems: 'center', }} variant="h6" >Roopa</Typography>
                                 </span>
 
 
@@ -57,23 +53,23 @@ export class ChatHead extends Component {
                                 {/* </ButtonBase> */}
 
                                 <span>
-                                    <Typography disableRipple disableFocusRipple style={{ textTransform: 'none' }} align='left' variant="body2">Em peekutunnav</Typography>
+                                    <Typography noWrap style={{ textTransform: 'none' }} align='left' variant="body2">Em peekutunnav</Typography>
                                 </span>
 
                             </Grid>
                             <Grid item xs={1} >
                                 <Button variant="outlined" disableRipple disableFocusRipple style={{ color: 'white', textTransform: 'none', textAlign: 'left', padding: 0 }} >
-                                <Typography align='right' variant="body2" >Time</Typography>
+                                    <Typography align='right' variant="body2" >Time</Typography>
                                 </Button>
                                 <Badge badgeContent={4} color="primary" className={classes.badge}>
-                                    
-                                    </Badge>
+
+                                </Badge>
                             </Grid>
                         </Grid>
                     </Grid>
 
                 </Grid>
-               
+
             </Box>
         )
     }

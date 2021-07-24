@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import { IconButton } from '@material-ui/core';
@@ -49,7 +48,7 @@ export class HeadBox extends Component {
         return (
             <div>
                 <Box bgcolor='#075e54' color='white'>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} alignItems="baseline" >
                         <Grid item xs={9}>
                             <Typography align='left' variant="h5" >WhatsApp</Typography>
                         </Grid>
