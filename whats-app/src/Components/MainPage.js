@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Paper from '@material-ui/core/Paper';
 import { withStyles } from '@material-ui/core/styles';
-import { Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 import HeadBox from './HeadBox';
 import ChatHead from './ChatHead';
-import Divider from '@material-ui/core/Divider';
-import ChatBoxHeader from './ChatBoxHeader';
+import ContactBox from './ContactBox';
+// import ContactBoxHeader from './ContactBoxHeader';
+// import { ContactChatBox } from './ContactChatBox';
 
 const useStyles = (theme) => ({
     box: {
@@ -40,18 +39,20 @@ export class MainPage extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div>
+            <div> 
                 <Box className={classes.box}>
-                    <Paper className={classes.paper} >
-                       {/* <HeadBox />
+                  <ContactBox />
+
+                    {/* <Paper className={classes.paper} >
+                       <HeadBox />
                       
                        <ChatHead />
                        <Divider className={classes.divider} />
-                       <ChatHead /> */}
+                       <ChatHead />
 
-                       <ChatBoxHeader />
+                       
                       
-                    </Paper>
+                    </Paper> */}
                 </Box>
             </div>
         )

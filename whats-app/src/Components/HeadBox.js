@@ -38,16 +38,16 @@ export class HeadBox extends Component {
     handleVerticalClick=(event)=>{
         let tag = event.target.innerHTML;
 
-        if(tag=="CHATS")this.setState({vertical:1});
-        else if(tag=="STATUS")this.setState({vertical:2});
-        else if(tag =="CALLS")this.setState({vertical:3});
+        if(tag==="CHATS")this.setState({vertical:1});
+        else if(tag==="STATUS")this.setState({vertical:2});
+        else if(tag ==="CALLS")this.setState({vertical:3});
     }
     render() {
 
         const { classes } = this.props;
         return (
             <div>
-                <Box bgcolor='#075e54' color='white'>
+                <Box bgcolor='#075e54' color='white' className={classes.box}>
                     <Grid container spacing={3} alignItems="baseline" >
                         <Grid item xs={9}>
                             <Typography align='left' variant="h5" >WhatsApp</Typography>

@@ -12,11 +12,6 @@ import { withStyles } from '@material-ui/core/styles';
 import { IconButton } from '@material-ui/core';
 
 const useStyles = (theme) => ({
-    box: {
-        height: 75,
-        width: "100%",
-
-    },
     iconButton: {
         color: 'white',
     },
@@ -30,7 +25,7 @@ export class ChatBoxHeader extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Box bgcolor='#075e54' color='white' className={classes.box}>
+            <Box bgcolor='#075e54' color='white' height={70} pt={1}>
                 <Grid container direction="row" justifyContent="space-between" alignItems="center" >
                     <Grid item xs={8}>
                         <Grid container direction="row" justifyContent="flex-start" alignItems="center">
@@ -47,7 +42,7 @@ export class ChatBoxHeader extends Component {
                             <Grid item xs={8} sm={5}>
                                 <Grid container direction="column" justifyContent="center" alignItems="flex-start">
                                     <Grid item>
-                                        <Typography noWrap align="left" variant="h6" >Roopa</Typography>
+                                        <Typography noWrap align="left" variant="h6" >Roofuz</Typography>
                                     </Grid>
                                     <Grid item>
                                         <Typography align="left" variant="caption" >Online</Typography>
