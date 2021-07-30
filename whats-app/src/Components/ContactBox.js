@@ -17,7 +17,7 @@ export class ContactBox extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Box borderRadius={16} bgcolor='#000000' >
+            <Box borderRadius={16} bgcolor='#000000'0 >
                 <ContactBoxHeader />
                 <div style={{
                     '*::-webkit-scrollbar': {
